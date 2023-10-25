@@ -1,25 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/tituloBienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenid@ a la APP"/>
+        android:text="Bienvenid@ a la APP"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"/>
 
     <TextView
         android:id="@+id/nombreApellidoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tituloBienvenida"
-        android:layout_marginTop="16dp"/>
+        android:layout_below="@+id/tituloBienvenida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/salirButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreApellidoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
         android:text="Salir"
-        android:layout_below="@id/nombreApellidoTextView"
-        android:layout_marginTop="16dp"/>
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>
