@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,8 +38,14 @@ class MainActivity : AppCompatActivity() {
                 intent.putStringArrayListExtra("nombresApellidos", listaNombresApellidos)
                 intent.putExtra("usuario", login)  // Enviar el nombre de usuario
                 startActivity(intent)
+
+                // Mostrar un Toast indicando que el login es correcto
+                Toast.makeText(this, "Login correcto", Toast.LENGTH_SHORT).show()
             } else {
                 Log.d("MainActivity", "Login o contraseña incorrectos")
+
+                // Mostrar un Toast indicando que el login o la contraseña son incorrectos
+                Toast.makeText(this, "Login o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
         }
     }
