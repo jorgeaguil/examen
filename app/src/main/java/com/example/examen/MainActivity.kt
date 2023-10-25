@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("MainActivity", "Login: $login, Password: $password")
 
-            if ((login == "miUser" && password == "miContra") || (login == "nuevoUser" && password == "nuevaContra")) {
+            if ((login == "jorge" && password == "123") || (login == "nuevoUser" && password == "nuevaContra")) {
                 Log.d("MainActivity", "Login correcto, iniciando BienvenidaActivity")
 
                 val listaNombresApellidos = ArrayList<String>()
-                listaNombresApellidos.add("Nombre1 Apellido1")
+                listaNombresApellidos.add("Jorge Aguilar")
                 listaNombresApellidos.add("Nombre2 Apellido2")
 
                 val intent = Intent(this, BienvenidaActivity::class.java)
